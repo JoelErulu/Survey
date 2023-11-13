@@ -1,0 +1,35 @@
+
+/* -- Joel Erulu lab 4 */
+
+h4{
+	color: #0066FF;
+}
+	
+tr:nth-of-type(odd) {
+	background-color: #D3D3D3;
+	text-align: left;
+}
+
+tr:first-of-type {
+	text-align: center;
+	font-weight: bold;
+}
+
+input[type=radio] {
+    border: 0px;
+    width: 1.5em;
+    height: 1.5em;
+}
+
+input[type='checkbox'] {
+    width: 1.5em;
+    height: 1.5em;
+}
+
+label {
+    display: inline-block;
+    width: 50px; 
+    margin-right: 25px; 
+    margin-top: 5px; 
+}
+
