@@ -1,0 +1,149 @@
+<!DOCTYPE html >
+<html lang="en">
+<head>
+
+<!-- Joel Erulu lab 4-->
+
+    <meta charset="utf-8">
+    <title>IT Survey</title>
+	<link href = "lab4.css" rel ="stylesheet">
+
+</head>
+<body>
+<h1>Information Security Awareness Survey</h1>
+
+<!-- This is an Information Security Awareness Survery made to gather information about cybersecurity. -->
+
+<form method = "post" action = "lab4.php">
+
+<h4>1. Demographic Information</h4>
+
+<!-- select your gender -->
+
+<label for = "Gender">Gender:</label>
+<select name = "Gender" id ="Gender">
+    <option value = "Male">Male</option>
+    <option value = "Female">Female</option>
+	<option value = "N/A">Do not want to tell</option>
+	</select><br>
+
+<!-- select your age -->
+
+<label for = "Age">Age:</label>
+<input type ="text" name = "Age" id = "Age"><br>
+
+<!-- select your level -->
+
+<label for = "Level">Level:</label>
+<select name = "Level" id ="Level">
+    <option>Choose your level at GGC</option>
+    <option value = "Freshman">Freshman</option>
+    <option value = "Sophomore">Sophomore</option>
+    <option value = "Junior">Junior</option>
+    <option value = "Senior">Senior</option>
+</select><br>
+
+
+<!-- select your school -->
+
+    <label for="School">School:</label>
+    <input list="Schools" id="School" name="School">
+    <datalist id="Schools">
+        <option value="SST">
+        <option value="SB">
+        <option value="SE">
+        <option value="SLA">
+    </datalist>
+
+<!-- choose your score -->
+
+<h4>2. How do you evaluate your security knowledge</h4>
+ Choose a score between 1 and 100 <label for = "Score"></label><br>1
+<input type ="range" name = "Score" id = "Score" min = "1" max = "100">100
+
+<h4>3. Have your computers been infected by virus before?</h4>
+<input type = "radio"  name="infected" id = "Yes" value ="Yes"><label for ="Yes">Yes</label>
+<input type = "radio"  name="infected" id = "No" value ="No"><label for ="No">No</label><br>
+
+<h4>4. What Anti-virus software do you usually use (you can pick more than one answer)</h4>
+
+
+<input type = "checkbox" name = "anti-virus" id="Norton"><label for ="Norton">Norton</label>
+<input type = "checkbox" name = "anti-virus" id="McAfee"><label for ="McAfee">McAfee</label>
+<input type = "checkbox" name = "anti-virus" id="Kasperski"><label for ="Kasperski">Kasperski</label><br>
+
+<input type = "checkbox" name = "anti-virus" id="AVG"><label for ="AVG">AVG</label>
+<input type = "checkbox" name = "anti-virus" id="Avast"><label for ="Kasperski">Avast</label>
+<input type = "checkbox" name = "anti-virus" id="Malwarebytes"><label for ="Malwarebytes">Malwarebytes</label><br>
+
+
+<input type = "checkbox" name = "anti-virus" id="Bitdefender"><label for ="Bitdefender">Bitdefender</label>
+<input type = "checkbox" name = "anti-virus" id="Webroot"><label for ="Webroot">Webroot</label>
+<input type = "checkbox" name = "anti-virus" id="TrendMicro"><label for ="TrendMicro">TrendMicro</label>
+
+
+<h4>5. Please rate the following questions from strongly disagre to strongly agree</h4>
+
+<table>
+<tr>
+	<td>  Questions &nbsp; </td>
+	<td>  Strongly Disagree &nbsp; </td>
+	<td>  Disagree &nbsp; </td>
+	<td>  Nuetral &nbsp; </td>
+	<td>  Agree &nbsp; </td>
+	<td>  Strongly Agree &nbsp; </td>
+</tr>
+
+<tr>
+	<td> How to create a strong password</td>
+	<td><input type = "radio"  name="password" id="StronglyDisagree" value =  "Strongly Disagree"></td>
+    <td><input type = "radio"  name="password" id="Disagree" value =  "Disagree"></td>
+    <td><input type = "radio"  name="password" id="Nuetral" value =  "Nuetral"></td>
+    <td><input type = "radio"  name="password" id="Agree" value =  "Strongly Disagree"></td>
+    <td><input type = "radio"  name="password" id="StronglyAgree" value =  "Strongly Agree"></td>	
+</tr>
+
+<tr>
+	<td> How to remove viruses from my computer</td>
+	<td><input type = "radio" name="viruses"  value =  "Strongly Disagree"></td>
+    <td><input type = "radio" name="viruses"  value =  "Disagree"></td>
+    <td><input type = "radio" name="viruses"  value =  "Nuetral"></td>
+    <td><input type = "radio" name="viruses"  value =  "Agree"></td>
+    <td><input type = "radio" name="viruses"  value =  "Strongly Agree"></td>	
+</tr>
+
+<tr>
+	<td> How to remove spyware from my computer</td>
+	<td><input type = "radio" name="spyware" value =  "Strongly Disagree"></td>
+    <td><input type = "radio" name="spyware" value =  "Disagree"></td>
+    <td><input type = "radio" name="spyware" value =  "Nuetral"></td>
+    <td><input type = "radio" name="spyware" value =  "Agree"></td>
+    <td><input type = "radio" name="spyware" value =  "Strongly Agree"></td>	
+</tr>
+
+<tr>
+	<td> How to secure my wireless network at home</td>
+	<td><input type = "radio" name="network" value =  "Strongly Disagree"></td>
+    <td><input type = "radio" name="network" value =  "Disagree"></td>
+    <td><input type = "radio" name="network" value =  "Nuetral"></td>
+    <td><input type = "radio" name="network" value =  "Agree"></td>
+    <td><input type = "radio" name="network" value =  "Strongly Agree"></td>
+</tr>
+
+<tr>
+	<td> I know how to protect my personal information when surfing the Internet</td>
+	<td><input type = "radio" name="surfing" value =  "Strongly Disagree"></td>
+    <td><input type = "radio" name="surfing" value =  "Disagree"></td>
+    <td><input type = "radio" name="surfing" value =  "Nuetral"></td>
+    <td><input type = "radio" name="surfing" value =  "Agree"></td>
+    <td><input type = "radio" name="surfing" value =  "Strongly Agree"></td>
+</tr>
+</table>
+
+<input type = "submit" value = "Submit">
+<input type = "reset">
+
+</form>
+
+</body>
+</html>
